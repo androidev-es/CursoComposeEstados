@@ -12,8 +12,10 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
+import es.androidev.cursocomposeestados.compose_viewmodel.ItemActivity
 import es.androidev.cursocomposeestados.estado_no_estructurado.ItemExampleActivity
 import es.androidev.cursocomposeestados.flujo_datos_unidireccional.ItemExampleViewModelActivity
+import es.androidev.cursocomposeestados.tareas_app.TaskActivity
 import es.androidev.cursocomposeestados.ui.theme.CursoComposeEstadosTheme
 
 
@@ -58,10 +60,11 @@ fun ButtonsNavigationOptions() {
             context.startActivity(Intent(context, ItemExampleViewModelActivity::class.java))
         }
         ButtonNavigation("Compose + ViewModel") {
-            //TODO: StartActivity
+            context.startActivity(Intent(context, ItemActivity::class.java))
+
         }
         ButtonNavigation("App Task") {
-            //TODO: StartActivity
+            context.startActivity(Intent(context, TaskActivity::class.java))
         }
 
     }

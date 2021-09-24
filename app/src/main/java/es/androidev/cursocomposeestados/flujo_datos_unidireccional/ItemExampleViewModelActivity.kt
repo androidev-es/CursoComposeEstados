@@ -15,8 +15,7 @@ class ItemExampleViewModelActivity : AppCompatActivity() {
     private lateinit var binding: ActivityItemExampleViewModelBinding
     private val viewModel by viewModels<ItemExampleViewModel>()
 
-    //Variable nombre cuyo estado incial es vacio.
-    var name = ""
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         title = "FLUJOS DATOS UNIDIRECCIONAL"

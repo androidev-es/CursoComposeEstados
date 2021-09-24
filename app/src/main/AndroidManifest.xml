@@ -10,6 +10,16 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CursoComposeEstados">
         <activity
+            android:name=".tareas_app.TaskActivity"
+            android:exported="true"
+            android:label="@string/title_activity_task"
+            android:theme="@style/Theme.CursoComposeEstados.NoActionBar" />
+        <activity
+            android:name=".compose_viewmodel.ItemActivity"
+            android:exported="true"
+            android:label="@string/title_activity_item"
+            android:theme="@style/Theme.CursoComposeEstados.NoActionBar" />
+        <activity
             android:name=".flujo_datos_unidireccional.ItemExampleViewModelActivity"
             android:exported="true" />
         <activity
